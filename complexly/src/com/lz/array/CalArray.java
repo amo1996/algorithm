@@ -32,6 +32,16 @@ public class CalArray {
      *    对比可以发现：从1开始的话，多了一次减法运算，对于CPU来说，就是多了一次减法指令。
      *   还有个原因：C语言设计者用0开始计数数组下标，之后的高级语言都效仿了C语言。
      */
+    public static void print(int[] a){
+        for(int i=0;i<a.length;i++){
+            System.out.println(a[i]);
+        }
+    }
 
+    public static void main(String[] args) {
+        int[] a=new int[10];
+          a[2]=10;
+        print(a);
+    }
 
 }
