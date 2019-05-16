@@ -28,7 +28,10 @@ public class DeleteNodeLeetCode {
      * @param node
      */
     public void deleteNode(ListNode node) {
+        //只给定删除节点，只需将下一个节点的状态赋给当前节点，再删除下一个节点。
+        //把当前节点的下一个节点的值付给当前节点
+        //再把下一个节点指向下下个节点的指针付给当前节点指向下个节点的指针
            node.val=node.next.val;
            node.next=node.next.next;
-  }
+     }
 }

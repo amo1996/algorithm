@@ -5,8 +5,8 @@ package com.lz.array;
  *  @Author liZhi
  */
 public class LzArray {
-     //定义一个数组
-     public int data[];
+    //定义一个数组
+    public int[] data;
      //定义数组长度
      private int n;
      //定义数组中实际个数

@@ -6,12 +6,9 @@ public class ReverseLinkedList {
      * 输入: 1->2->3->4->5->NULL
      输出: 5->4->3->2->1->NULL
      */
-    public class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) { val = x; }
-  }
-    public ListNode reverseList(ListNode head) {
+
+
+    public static ListNode reverseList(ListNode head) {
           ListNode prev=null;
           ListNode curr=head;
           while(curr!=null){
@@ -23,8 +20,23 @@ public class ReverseLinkedList {
           return prev;
     }
 
+    public static void main(String[] args) {
+         ListNode a=new ListNode(5);
+        ListNode  b=new ListNode(4);
+         a.next=b;
+        ListNode  c=new ListNode(3);
+        b.next=c;
+        ListNode  d=new ListNode(2);
+        c.next=d;
+        ListNode  e=new ListNode(1);
+        d.next=e;
+        reverseList(a);
+    }
+
     public ListNode reverseList2(ListNode head) {
-        if (head == null || head.next == null) return head;
+        if (head == null || head.next == null) {
+            return head;
+        }
         ListNode newHead   = reverseList(head.next);
         head.next.next    = head;
         head.next         = null;
@@ -41,5 +53,13 @@ public class ReverseLinkedList {
             head         = tmp;
         }
         return newHead;
+    }
+    static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            this.val = x;
+        }
     }
 }

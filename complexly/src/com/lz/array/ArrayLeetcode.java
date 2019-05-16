@@ -49,9 +49,13 @@ public class ArrayLeetcode {
     }
 
     public int[][] flipAndInvertImage3(int[][] A) {
-        if (A == null) return null;
+        if (A == null) {
+            return null;
+        }
         for (int[] row : A) {
-            if (row == null) continue;
+            if (row == null) {
+                continue;
+            }
             for (int i = 0, j = row.length - 1; i < j; ++i,--j) {
                 int t = row[i];
                 row[i] = row[j];
@@ -67,8 +71,9 @@ public class ArrayLeetcode {
         int[][] a = {{1, 1, 0}, { 1,0, 1}, {0, 0, 0}};
         int[][] ints = flipAndInvertImage(a);
         for (int i = 0; i < ints.length; ++i) {
-            for (int j = 0; j < ints[i].length; ++j)
+            for (int j = 0; j < ints[i].length; ++j) {
                 System.out.print(ints[i][j]);
+            }
             System.out.print("\n");
         }
     }
