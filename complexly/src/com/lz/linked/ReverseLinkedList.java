@@ -9,15 +9,13 @@ public class ReverseLinkedList {
 
 
     public static ListNode reverseList(ListNode head) {
-          ListNode prev=null;
-          ListNode curr=head;
-          while(curr!=null){
-             ListNode tmp= curr.next;
-              curr.next=prev;
-              prev = curr;
-              curr = tmp;
-          }
-          return prev;
+        /**
+         * 终止条件： 链表结尾 head.next=null
+         *  返回值：
+         *  本级递归：
+         */
+
+        return null;
     }
 
     public static void main(String[] args) {
