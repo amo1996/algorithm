@@ -1,4 +1,4 @@
-package com.found;
+
 
 /**
  * 哈希表/散列表   借助散列函数对数组这种数据结构进行扩展，利用了数组支持下标随机访问元素的特性。
@@ -7,7 +7,7 @@ package com.found;
  *  liZhi
  *
  */
-public class HashTable {
+
     /**
      *     散列表：
      *  散列表利用数组支持按照下标随机访问，时间复杂度是O(1)的特性。
@@ -73,4 +73,3 @@ public class HashTable {
      * 时间复杂度为O(N)。
      *
      */
-}

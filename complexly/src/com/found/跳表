@@ -1,5 +1,3 @@
-package com.found;
-
 
 /**
  * 跳表：可以支持快速的插入、删除、查找。
@@ -7,7 +5,6 @@ package com.found;
  * 2019年6月21日11:16:14
  * liZhi
  */
-public class SkipList {
     /**
      *  建立N级索引
        我们可以隔2个或者3个或者N个节点提取一个节点到上一级，我们把抽出来的哪一级叫作索引层。
@@ -46,4 +43,3 @@ public class SkipList {
      */
 
 
-}
