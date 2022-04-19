@@ -14,6 +14,7 @@ public class FullTesg {
          “-XX:NewSize=10485760 -XX:MaxNewSize=10485760 -XX:InitialHeapSize=20971520 -XX:MaxHeapSize=20971520 -
          XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=15 -XX:PretenureSizeThreshold=10485760 -XX:+UseParNewGC -
          XX:+UseConcMarkSweepGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:gc.log”
+         包括JVM参数配置
          */
         byte[] array1 = new byte[2 * 1024 * 1024];  // 2MB
         array1 =new byte[2*1024*1024];        // 2MB
