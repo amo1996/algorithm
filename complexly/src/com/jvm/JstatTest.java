@@ -3,6 +3,7 @@ package com.jvm;
 /**
  * @Classname JstatTest
  * @Description
+ *
  * @Date 2022/4/14 19:40
  * @Created by liZhi
  */
@@ -24,6 +25,7 @@ public class JstatTest {
           }
           data = null;
          Thread.sleep(1000);
+
     }
 
 }
